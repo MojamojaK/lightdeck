@@ -1,0 +1,29 @@
+{
+  "name": "LightDeck",
+  "version": "1.0.0",
+  "description": "light tweetdeck",
+  "main": "app.js",
+  "postinstall": "electron-builder install-app-deps",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Anonymous Person",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-builder": "^20.31.2"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.2"
+  },
+  "build": {
+    "appId": "com.faster.tweetdeck",
+    "mac": {
+      "category": "faster.tweetdeck.sns"
+    }
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  }
+}
