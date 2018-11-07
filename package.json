@@ -4,9 +4,6 @@
   "description": "light tweetdeck",
   "main": "app.js",
   "postinstall": "electron-builder install-app-deps",
-  "scripts": {
-    "start": "electron ."
-  },
   "author": "Anonymous Person",
   "license": "ISC",
   "devDependencies": {
@@ -23,6 +20,7 @@
     }
   },
   "scripts": {
+    "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   }
